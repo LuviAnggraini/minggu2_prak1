@@ -14,14 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return  ('Selamat Datang');
-    });
-
- Route::get('/about', function () {
-        return  ('Luvi Anggraini');
-       
-        });
-
-Route::get('/articles/{id}', function($id){
-            return 'Halaman Artikel dengan ID '.$id;
-        });
+    return view('welcome');
+});
